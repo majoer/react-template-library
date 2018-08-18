@@ -1,9 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './index.scss';
+import Component from './lib/index';
 
-const Index = () => {
-  return <div>Hello React!</div>;
-};
-
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render(<Component />, document.getElementById("index"));

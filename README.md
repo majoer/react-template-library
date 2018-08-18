@@ -1,4 +1,4 @@
-## React Template
+## React Library Template
 
 #### Supports
 
