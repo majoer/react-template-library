@@ -7,7 +7,10 @@
     "src/lib/**/*"
   ],
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot"
+    "clean": "rimraf dist",
+    "build-webpack": "webpack --config webpack.config.js",
+    "build": "npm-run-all clean build-webpack",
+    "start": "webpack-dev-server --mode development --open --hot --config webpack.config.dev.js"
   },
   "keywords": [],
   "author": "",
